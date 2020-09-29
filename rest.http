@@ -1,0 +1,8 @@
+### trigger sse
+POST http://localhost:5000/trigger-sse
+content-type: application/json
+
+{
+    "text": "hello world",
+    "type": "sse"
+}
