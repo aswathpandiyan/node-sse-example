@@ -3,7 +3,7 @@
     <script>
       var channel = new EventSource("/channel/1");
       channel.addEventListener("message", function (ev) {
-        var data = JSON.parse(ev.data);
+        var data = JSON.stringify(ev.data);
         document.getElementById("data").innerHTML = data;
         console.log(data);
       });
